@@ -1,7 +1,7 @@
 import os
 from flask import Blueprint
-from ..flask_extensions import pages
 from ..utils import blueprint_render_template_factory
+from ..utils import flatpages_posts, flatpages_post
 
 #######################################################################
 # Get name of current file
@@ -19,12 +19,10 @@ render_template = blueprint_render_template_factory(BLUEPRINT_NAME)
 #######################################################################
 @present.route('/posts/')
 def posts():
-    posts = [p for p in pages if p.path.startswith(BLUEPRINT_NAME)]
-    posts.sort(key=lambda item:item['date'], reverse=True)
+    posts = flatpages_posts(BLUEPRINT_NAME)
     return render_template('posts.html', posts=posts)
 
 @present.route('/posts/<name>/')
 def post(name):
-    post_path = os.path.join(BLUEPRINT_NAME, name)
-    post = pages.get_or_404(post_path)
+    post = flatpages_post(BLUEPRINT_NAME, name)
     return render_template('post.html', post=post)
