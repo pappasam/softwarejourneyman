@@ -1,0 +1,24 @@
+digraph Website {
+    rankdir=LR;
+
+    node [shape=ellipse style=filled fillcolor=lightgray color=black];
+    edge [arrowhead=vee];
+
+    HOME [label="/home" shape=house fillcolor=wheat];
+
+    subgraph cluster_categories {
+        label="Categories";
+        KEY [label="/keyboards"];
+        TYP [label="/typing"];
+        EDI [label="/editors"];
+        RNT [label="/rant"];
+    }
+
+    HOME -> KEY;
+    HOME -> TYP;
+    HOME -> EDI;
+    HOME -> RNT;
+
+    labelloc=t labelfontsize=30;
+    label=<<B>Keyboard Blog: </B>URL Diagram>;
+}

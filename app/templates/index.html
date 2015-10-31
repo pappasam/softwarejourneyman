@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block page_content %}
+
+<h1>Journeyman's Inn</h1>
+
+<h3>Journeyman</h3>
+<p><em>an individual who has completed an apprenticeship and is fully educated in a trade or craft, but not yet a master.</em>
+    <a href="https://en.wikipedia.org/wiki/Journeyman">Wikipedia</a></p>
+
+<p>Come inside, traveler. Sheath your <a href="https://en.wikipedia.org/wiki/Membrane_keyboard">membrane keyboard</a>, meditate upon your <a href="https://en.wikipedia.org/wiki/Software_bloat">bloated operating system</a>, and rest your weary fingertips. Set aside your hunger and absorb this curation.</p>
+
+<ol>
+    <li>Software enables feats of greatness</li>
+    <li>No one software tool is right</li>
+    <li>Most software tools are wrong</li>
+</ol>
+
+<h2><a href="{{ url_for('present.posts') }}">Present</a></h2>
+
+{% endblock page_content %}

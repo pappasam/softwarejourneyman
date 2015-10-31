@@ -1,0 +1,11 @@
+# Python virtual environment
+venv/
+
+# Compiled python
+*.pyc
+
+# Swap files from vim
+*.swp
+
+# Bulid directory
+build/
