@@ -2,6 +2,11 @@
 
 {% block html_attribs %} lang="en"{% endblock %}
 
+{% block head %}
+{{ super() }}
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico')}}" type="image/x-icon" sizes="16x16 24x24 32x32 64x64">
+{% endblock %}
+
 {% block title %}Software Journeyman{% endblock %}
 
 {% block styles %}

@@ -1,14 +1,8 @@
 {% extends "base.html" %}
+{% import "macros.html"  as macros %}
+
 {% block page_content %}
 
-{% for post in posts %}
-    <a href="{{ url_for('bugs.post',
-        name=post.path.replace('bugs/', '')) }}">
-        {{ post.title }}
-    </a>
-
-    <small>{{ post.date }}</small>
-    <br>
-{% endfor %}
+{{ macros.display_posts(posts, "bugs.post", "bugs/") }}
 
 {% endblock page_content %}

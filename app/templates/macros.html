@@ -1,0 +1,11 @@
+{% macro display_posts(posts, view, excess_url) %}
+    <h2>Posts</h2>
+    {% for post in posts %}
+        <a href="{{ url_for('%s' % view, name=post.path.replace('%s' % excess_url, '')) }}">
+            {{ post.title }}
+        </a>
+
+        <small>{{ post.date }}</small>
+        <br>
+    {% endfor %}
+{% endmacro %}

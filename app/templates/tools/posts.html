@@ -1,14 +1,21 @@
 {% extends "base.html" %}
+{% import "macros.html" as macros %}
+
 {% block page_content %}
 
-{% for post in posts %}
-    <a href="{{ url_for('tools.post',
-        name=post.path.replace('tools/', '')) }}">
-        {{ post.title }}
-    </a>
+<h1>One-tool jobs</h1>
+<p>There is one right tool for every task in software. If there are seemingly many right tools, you may be suffering from:</p>
 
-    <small>{{ post.date }}</small>
-    <br>
-{% endfor %}
+<ol>
+    <li>Subject matter ignorance</li>
+    <li>Broad, non-specific requirements</li>
+    <li>An enterprise integration for an organization systemically suffering from 1 and 2</li>
+</ol>
+
+<p>As a software journeyman, your goal is to minimize your subject matter ignorance and clarify requirements. If you are working on an enterprise integration, reference <a href="{{ url_for('error.posts')}}">Human error</a> for tips on surviving the folly of man.</p>
+
+<p>Posts in this section are dedicated to one specific job and its best corresponding tool.</p>
+
+{{ macros.display_posts(posts, "tools.post", "tools/") }}
 
 {% endblock page_content %}
