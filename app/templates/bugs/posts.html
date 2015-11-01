@@ -2,8 +2,8 @@
 {% block page_content %}
 
 {% for post in posts %}
-    <a href="{{ url_for('present.post',
-        name=post.path.replace('present/', '')) }}">
+    <a href="{{ url_for('bugs.post',
+        name=post.path.replace('bugs/', '')) }}">
         {{ post.title }}
     </a>
 
