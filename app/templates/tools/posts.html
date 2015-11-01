@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block page_content %}
+
+{% for post in posts %}
+    <a href="{{ url_for('tools.post',
+        name=post.path.replace('tools/', '')) }}">
+        {{ post.title }}
+    </a>
+
+    <small>{{ post.date }}</small>
+    <br>
+{% endfor %}
+
+{% endblock page_content %}

@@ -4,6 +4,7 @@ from flask_nav.elements import Navbar, View
 topbar = Navbar('',
         View('Home', 'index.main_index'),
         View('Present', 'present.posts'),
+        View('Tools', 'tools.posts'),
         )
 
 nav = Nav()
