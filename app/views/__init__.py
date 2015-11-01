@@ -1,5 +1,6 @@
 from .index import index
-from .present import present
+from .error import error
+from .bugs import bugs
 from .tools import tools
 
-blueprints_all = [index, present, tools]
+blueprints_all = [index, error, bugs, tools]
