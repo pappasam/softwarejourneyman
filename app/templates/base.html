@@ -19,5 +19,14 @@
 {% block content %}
 <div class="container">
     {% block page_content %}{% endblock %}
+    <br>
+    <small>
+        Copyright &copy;
+        <script>
+            var year = new Date().getFullYear();
+            document.write(year);
+        </script> Samuel Roeca, All Rights Reserved
+    </small>
 </div>
 {% endblock %}
+
