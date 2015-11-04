@@ -1,31 +1,16 @@
 body {
-    color: black;
-    line-height: 1.5;
     font-family: "Georgia", "Times New Roman", "Times";
 }
 
-.container {
-    margin-bottom: 10px;
-    margin-right: 150px;
-    margin-left: 50px;
-    margin-top: 10px;
-    text-align: left;
-    width: 700px;
-    font-size: 16px;
-}
-
 h1 {
-    text-align: center;
     color: #F26518;
 }
 
 h2 {
-    text-align: left;
     color: black;
     font-weight: bold;
 }
 
 li {
     text-align: left;
-    color: black;
 }
