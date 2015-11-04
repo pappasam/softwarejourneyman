@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% block page_content %}
 
+<div class="row">
+<div class="col-sm-7">
+
+{# Begin page content; first two divisions are for formatting #}
 <div class="page-header">
     <h1>Software Journeyman</h1>
     <p>
@@ -21,5 +25,10 @@
     <li>Once the best tool's quirks are ironed, how do I handle my team's quirks?</li>
 </ol>
 <p>This blog exists mostly to answer the first question. Since my target audience is the early journeyman, I will treat my subject matter as "black and white" as possible. There are nuances to my tool selection, but discussing them here may confuse the reader. I will have tried many tools before settling on ones in the list, and will avoid writing about tools I do not understand. The second topic exists so others can avoid bugs I spend hours finding. The third gives me the opportunity to write about working with people. This may not see too much action, but it's there in case I get the urge.</p>
+</div>
+{# End page content #}
 
+<div class="col-sm-5"></div>
+
+</div>
 {% endblock page_content %}

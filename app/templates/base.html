@@ -22,20 +22,15 @@ href="{{ url_for('static', filename='style.css')}}">
 
 {% block content %}
 <div class="container">
-    <div class="row">
-        <div class="col-sm-7">
-            {% block page_content %}{% endblock %}
-            <br>
-            <small>
-                Copyright &copy;
-                <script>
-                    var year = new Date().getFullYear();
-                    document.write(year);
-                </script> Samuel Roeca, All Rights Reserved
-            </small>
-        </div>
-        <div class="col-sm-5"></div>
-    </div>
+    {% block page_content %}{% endblock %}
+    <br>
+    <small>
+        Copyright &copy;
+        <script>
+            var year = new Date().getFullYear();
+            document.write(year);
+        </script> Samuel Roeca, All Rights Reserved
+    </small>
 </div>
 {% endblock %}
 
