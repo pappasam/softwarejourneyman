@@ -1,0 +1,39 @@
+{% extends "base_bootstrapping.html" %}
+
+{% block page_content %}
+<div class="row">
+    <div class="col-sm-7 page-header">
+        {% block page_title %}{% endblock %}
+    </div>
+    <div class="col-sm-5"></div>
+</div>
+
+<div class="row">
+    <div class="col-sm-7">
+        {% block page_writing %}{% endblock %}
+    </div>
+    <div class="col-sm-5"></div>
+</div>
+
+<div class="row">
+    <div class="col-sm-7">
+        <table class="table table-hover table-bordered">
+            {% block page_table %}{% endblock %}
+        </table>
+    </div>
+    <div class="col-sm-5"></div>
+</div>
+
+<div class="row">
+    <div class="col-sm-7">
+        <small>
+            Copyright &copy;
+            <script>
+                var year = new Date().getFullYear();
+                document.write(year);
+            </script> Samuel Roeca, All Rights Reserved
+        </small>
+    </div>
+    <div class="col-sm-5"></div>
+</div>
+{% endblock %}

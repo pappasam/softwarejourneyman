@@ -1,4 +1,4 @@
-{% extends "base_posts.html" %}
+{% extends "base_container.html" %}
 
 {% block page_title %}
 <h1>One job, one best tool</h1>
@@ -8,8 +8,8 @@
 </p>
 {% endblock %}
 
-{% block section_description %}
-<p>There are many software tools. Some are better than others, and it is virtually impossible for two things to be identical in value. Therefore, at any distinct point in time, with proper granularity, there is one exactly one right software tool per task. If there seem to be many ideal tools, this stems from:</p>
+{% block page_writing %}
+<p>Some software tools are better than others, and it is virtually impossible for two things to be identical in value. Therefore, at any distinct point in time, with proper granularity, there is exactly one right software tool per task. If there seem to be many ideal tools, this stems from:</p>
 
 <ol>
     <li>Subject matter ignorance</li>
@@ -17,12 +17,14 @@
     <li>Enterprise integrations for organizations systemically suffering from 1 and 2</li>
 </ol>
 
-<p>As a software journeyman, your goal is to minimize subject matter ignorance and clarify requirements. This usually results in an epic quest for a suite of perfect tools. If you are working on enterprise integrations, reference <a href="{{ url_for('error.posts')}}">Human error</a> for tips on surviving the folly of man.</p>
+<p>As a software journeyman, your goal is to minimize subject matter ignorance and clarify requirements. This usually results in an epic quest for a suite of perfect tools. If you are working on enterprise integrations, reference <a href="{{ url_for('error.posts')}}">human error</a> for tips on surviving the folly of man.</p>
 
 <p>Posts in this section are dedicated to one specific job and its best corresponding tool.</p>
+
+<h2>Posts</h2>
 {% endblock %}
 
-{% block post_table %}
+{% block page_table %}
 <thead>
     <tr>
         <th>Task</th>
