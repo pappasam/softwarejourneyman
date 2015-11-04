@@ -1,4 +1,6 @@
-title: Happy hacking keyboard
+task: Typing
+tool: Happy Hacking Keyboard
+title: Enjoy the mundane
 date: 2015-10-18
 
 # Happy hacking keyboard review

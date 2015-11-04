@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-{% import "macros.html" as macros %}
 
 {% block page_content %}
 
@@ -23,6 +22,29 @@
 
 <p>Posts in this section are dedicated to one specific job and its best corresponding tool.</p>
 
-{{ macros.display_posts(posts, "tools.post", "tools/") }}
+<h2>Posts</h2>
+
+{# Insert table of blog posts #}
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Task</th>
+            <th>Tool</th>
+            <th>Title</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for post in posts %}
+        <tr>
+            <td><a href="{{ url_for('tools.post', name=post.path.replace('tools/', '')) }}">
+                {{ post.task }}</a></td>
+            <td>{{ post.tool }}</td>
+            <td>{{ post.title }}</td>
+            <td>{{ post.date }}</td>
+        <tr/>
+    {% endfor %}
+    </tbody>
+</table>
 
 {% endblock page_content %}
