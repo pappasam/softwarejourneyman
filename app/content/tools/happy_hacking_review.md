@@ -3,8 +3,6 @@ tool: Happy Hacking Keyboard
 title: Enjoy the mundane
 date: 2015-10-18
 
-# Happy hacking keyboard review
-
 I recently purchased the Happy Hacking Keyboard Professional 2. That isn't quite honest... after the first keyboard, I bought another. It has proven to be the greatest keyboard ever for the following reasons:
 
 1. Super cool
