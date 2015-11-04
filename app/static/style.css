@@ -8,9 +8,16 @@ h1 {
 
 h2 {
     color: black;
-    font-weight: bold;
 }
 
-li {
-    text-align: left;
+p {
+    font-size: 16px;
+}
+
+ol {
+    font-size: 16px;
+}
+
+ul {
+    font-size: 16px;
 }
