@@ -1,24 +1,12 @@
-task: Typing
-tool: Happy Hacking Keyboard
 title: Enjoy the mundane
-date: 2015-10-18
+date: 2015-11-04
+task: typing
+tool: Happy Hacking Keyboard (professional 2)
 
-I recently purchased the Happy Hacking Keyboard Professional 2. That isn't quite honest... after the first keyboard, I bought another. It has proven to be the greatest keyboard ever for the following reasons:
+## Executive summary
 
-1. Super cool
-* Very small
-* Chicks love it
+The Happy Hacking Keyboard (professional 2) is the perfect typing tool for software development. The switches are amazing, and its non-standard layout prevents others from requiring you to waste time on manipulating requiring arrow keys. It is small enough to accompany you anywhere, and its key layout is perfect for the touch typist. Finally, its price represents a commitment to pursuing your craft.
 
-I will now go into detail about what makes the above true.
+## Main
 
-## Super cool
-
-The happy hacking keyboard is super cool. Enough said.
-
-## Very small
-
-It's super small. Doesn't take up and unnecessary space. Love it.
-
-## Conclusion
-
-Thanks for reading my blog.
+Thanks for reading my blog
