@@ -1,8 +1,32 @@
-{% extends "base.html" %}
-{% import "macros.html"  as macros %}
+{% extends "base_container.html" %}
 
-{% block page_content %}
+{% block page_title %}
+<h1>Avoidable bugs</h1>
+<p>
+    <em><b>Bug</b> - an error, flaw, failure, or fault in a computer program or system that causes it to produce an incorrect or unexpected result, or to behave in unintended ways</em>
+<a href="https://en.wikipedia.org/wiki/Software_bug">Wikipedia</a>
+</p>
+{% endblock %}
 
-{{ macros.display_posts(posts, "bugs.post", "bugs/") }}
+{% block page_writing %}
+<p>In programming, bugs are a fact of life. They arise because systems are strange and beautiful. Here, I document some quirks for which I've found solutions.</p>
+<h2>Posts</h2>
+{% endblock %}
 
-{% endblock page_content %}
+{% block page_table %}
+<thead>
+    <tr>
+        <th>Title</th>
+        <th>Date</th>
+    </tr>
+</thead>
+<tbody>
+{% for post in posts %}
+    <tr>
+        <td><a href="{{ url_for('bugs.post', name=post.path.replace('bugs/', '')) }}">
+            {{ post.title }}</a></td>
+        <td>{{ post.date }}</td>
+    <tr/>
+{% endfor %}
+</tbody>
+{% endblock %}
