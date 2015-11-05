@@ -1,5 +1,4 @@
 blessings==1.6
-bpython==0.14.2
 curtsies==0.1.19
 dominate==2.1.16
 Flask==0.10.1
