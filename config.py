@@ -4,7 +4,7 @@ from app.utils import flatpages_renderer
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 class ConfigBase(object):
-    SECRET_KEY = "hardtoguessstring"
+    SECRET_KEY = os.urandom(24)
 
     FLATPAGES_ROOT = "./content/"
     FLATPAGES_EXTENSION = '.md'
