@@ -10,7 +10,8 @@ def command_line_parser():
             help="Determine type of configuration parameters")
     return parser.parse_args()
 
+
 if __name__ == '__main__':
     cmdline = command_line_parser()
-    application = create_app(cmdline.config_type)
+    application = create_app(cmdline)
     application.run()
