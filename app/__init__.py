@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 from config import config
 
-def create_app(config_name: str) -> Flask:
+def create_app(config_name):
     '''Configuration name'''
     app = Flask(__name__)
 
