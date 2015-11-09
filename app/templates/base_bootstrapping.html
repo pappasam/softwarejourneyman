@@ -16,7 +16,7 @@ type="image/x-icon" sizes="16x16 24x24 32x32 64x64">
 {{ super() }}
 <link rel="stylesheet" href="{{ url_for('index.pygments_css') }}">
 <link rel="stylesheet"
-href="{{ url_for('static', filename='style.css')}}">
+href="{{ url_for('static', filename='css/style.css')}}">
 {% endblock %}
 
 {% block navbar %} {{ nav.top.render() }} {% endblock %}
