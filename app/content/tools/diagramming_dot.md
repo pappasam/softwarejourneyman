@@ -20,7 +20,7 @@ If people appreciate diagrams so much, why do developers so often neglect them? 
 * Most people associate diagrams with presentation software
 * Presentation software is most-often used and appreciated by non-developers, who enjoy dragging their mouses around the mouse pad
 * When I'm forced to leave my text editor and enter the GUI world of non-developers, my soul starts dying
-* Therefore, If I had to leave the terminal to generate a diagram, I'd probably just resign myself to cryptic text files and whiteboarding.
+* Therefore, if I had to leave the terminal to generate a diagram, I'd probably just resign myself to cryptic text files and whiteboarding.
 
 ## Solution: diagram through code!
 
