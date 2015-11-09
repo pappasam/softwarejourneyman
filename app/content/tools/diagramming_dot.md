@@ -3,13 +3,15 @@ date: 2015-11-08
 task: Diagramming
 tool: Dot language / Graphviz
 
-How do you explain a system to other developers before any code has been written? If code is being written, how to you ensure each developer remembers the big picture, and can revise it when necessary? After a system has been built, how do you introduce a non-technical person to your system's raison d'être?
+1. Before any code is written, how do you explain your system to others?
+* During development, how does a team keep itself abreast of design changes?
+* After a system is built, how to you explain the system to others?
 
-One solution I've often witnessed is dry prose. A developer might create a long, dry text file and forward it as an attachment with no email header. During an on-boarding meeting, he might point out that he sent an email and that he's ready for questions. The non-technical person then might ask, "Can you explain what you mean here in the second line by 'class inheritance'?" It becomes clear this is the meeting from hell. No resolutions are drawn, everyone's time was wasted, and the non-technical participant concludes he hates working with engineers. After three more prose-filled meetings, the project begins, crashes, and burns three weeks later.
+While not the ideal solution, I've noticed some developers approach these questions by generating colorful prose. No doubt, a long, dry text file may be forwarded as an attachment with no email header. During a meeting, the prose's author might lean back, glance around the room, and mutter that he's ready for questions. Somewhere from the corner, the only non-technical person might ask, "Can you explain what you mean here in the second line by 'class inheritance'?" **silence** It becomes clear this is the meeting from hell. No resolutions are drawn, everyone's time was wasted, and the non-technical participant concludes that he hates working with engineers. After three more meetings, all with different flavors of prose, the project begins. Three months later, janitors are still having a hard time getting its vile stench out of the carpet.
 
-The correct solution would have been to draw a picture. If the developer had walked the team through a diagram, the non-technical member might have seen the box reading "Data expected from **Company A**". This same non-technical person might have pointed out that Company A is suing Company C, which will probably mean we'll never get said data. Non-technical participants are often the only people in the room aware of political blockers. By making technical content accessible through a diagram, it becomes much easier to obtain necessary input.
+With a little experience, most developers will tell you that the correct solution would have been to draw a picture. If the team had been walked through a diagram, the non-technical member might have seen a box clearly labeled "Data expected from **Company A**". This same non-technical person might have pointed out that Company A is suing Company C, which will probably mean we'll never get said data. The diagram is then revised, removing any assumptions about company A. The project goes down in the team's long line of success stories
 
-Of course, non-technical participants aren't the only people who benefit from diagrams. I'm fairly certain all developers appreciate the simplicity of a nicely drawn diagram. In a perfect world, every project would be associated with an up-to-date diagram for everyone's reference.
+Non-technical participants are often the only people in the room aware of political blockers. By making technical content accessible through a diagram, it becomes much easier to obtain necessary input. Of course, non-technical participants aren't the only people who benefit from diagrams. I'm fairly certain all developers appreciate the simplicity of a nicely drawn diagram. In a perfect world, every project would be associated with an up-to-date diagram for everyone's reference.
 
 ## So then, why you no draw picture?
 
@@ -17,7 +19,7 @@ If people appreciate diagrams so much, why do developers so often neglect them? 
 
 * Most people associate diagrams with presentation software
 * Presentation software is most-often used and appreciated by non-developers, who enjoy dragging their mouses around the mouse pad
-* When I'm forced to leave my text editor and enter with GUI world of non-developers, my soul starts dying
+* When I'm forced to leave my text editor and enter theGUI world of non-developers, my soul starts dying
 * Therefore, If I had to leave the terminal to generate a diagram, I'd probably just resign myself to cryptic text files and whiteboarding.
 
 ## Solution: diagram through code!
