@@ -1,0 +1,45 @@
+digraph kingdom_danger {
+    rankdir=LR; // Diagram goes from left to right
+    node [shape=hexagon style=filled fillcolor=cornsilk color=black];
+
+    /*These are
+      my outsiders
+      */
+    OUT1 [label="Outsider 1"];
+    OUT2 [label="Outsider 2"];
+
+    // This is a cluster representing the perils and joy of software
+    subgraph cluster_software_kingdom {
+        label = "Software Kingdom" style=filled;
+        fillcolor=peachpuff color=black;
+        node [shape=trapezium];
+        SGF [label="Segfault" fillcolor=lightgray];
+        BTR [label="Breakthrough" fillcolor=orangered];
+        PTN [label="Patent Troll" fillcolor=plum];
+    }
+
+    // All users gather here, and bask in your freedom
+    subgraph cluster_users {
+        label = "Land of users" style=filled;
+        fillcolor=gainsboro color=black;
+        node [shape=doublecircle];
+        HKR [label="Hacker" fillcolor=seagreen];
+        NOB [label="Noob" fillcolor=royalblue];
+        GMR [label="Gamer" fillcolor=purple];
+    }
+
+    // Relationships between outsiders and the kingdom
+    OUT1 -> BTR;
+    OUT1 -> PTN;
+    OUT2 -> SGF;
+
+    // Kingdom and its relationship with users
+    SGF -> HKR;
+    SGF -> GMR;
+    PTN -> NOB;
+    BTR -> NOB;
+
+    // My fun title
+    labelloc=t;
+    label=<<B>Kingdom Danger:</B> Fun times!>;
+}
