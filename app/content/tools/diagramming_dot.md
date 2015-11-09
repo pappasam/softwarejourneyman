@@ -34,18 +34,16 @@ My prose about the DOT language is probably fascinating, but I figure an example
 
 The image is certainly colorful. With a little imagination, I'm sure you can see yourself putting the content of your software projects in this kind of form. I'm sure it will be much more logical than what I put together. Although the above image is cool, what is cooler (to me) is that everything was generated with the following code:
 
-    :::python
+    :::dot
     digraph kingdom_danger {
-        rankdir=LR; // Diagram goes from left to right
+        rankdir=LR; /* Diagram goes from left to right */
         node [shape=hexagon style=filled fillcolor=cornsilk color=black];
 
-        /*These are
-          my outsiders
-          */
+        /* These are my outsiders */
         OUT1 [label="Outsider 1"];
         OUT2 [label="Outsider 2"];
 
-        // This is a cluster representing the perils and joy of software
+        /* This is a cluster representing the perils and joy of software */
         subgraph cluster_software_kingdom {
             label = "Software Kingdom" style=filled;
             fillcolor=peachpuff color=black;
@@ -55,7 +53,7 @@ The image is certainly colorful. With a little imagination, I'm sure you can see
             PTN [label="Patent Troll" fillcolor=plum];
         }
 
-        // All users gather here, and bask in your freedom
+        /* All users gather here, and bask in your freedom */
         subgraph cluster_users {
             label = "Land of users" style=filled;
             fillcolor=gainsboro color=black;
@@ -65,18 +63,18 @@ The image is certainly colorful. With a little imagination, I'm sure you can see
             GMR [label="Gamer" fillcolor=purple];
         }
 
-        // Relationships between outsiders and the kingdom
+        /* Relationships between outsiders and the kingdom */
         OUT1 -> BTR;
         OUT1 -> PTN;
         OUT2 -> SGF;
 
-        // Kingdom and its relationship with users
+        /* Kingdom and its relationship with users */
         SGF -> HKR;
         SGF -> GMR;
         PTN -> NOB;
         BTR -> NOB;
 
-        // My fun title
+        /* My fun title */
         labelloc=t;
         label=<<B>Kingdom Danger:</B> Fun times!>;
     }
